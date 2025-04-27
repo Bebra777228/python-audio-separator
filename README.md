@@ -357,10 +357,13 @@ output_files = separator.separate(['audio1.wav', 'audio2.wav', 'audio3.wav'])
 You can also specify the path to a folder containing audio files instead of listing the full paths to each of them:
 ```python
 from audio_separator.separator import Separator
+
 # Initialize the Separator class (with optional configuration properties, below)
 separator = Separator()
+
 # Load a model
 separator.load_model(model_filename='UVR-MDX-NET-Inst_HQ_3.onnx')
+
 # Separate all audio files located in a folder
 output_files = separator.separate('path/to/audio_directory')
 ```
